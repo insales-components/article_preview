@@ -1,0 +1,44 @@
+.article_preview {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.article_preview-title {
+  color: #000;
+  font-size: 20px;
+  word-break: break-word;
+  text-align: left;
+  a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+}
+.article_preview-blog {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+  a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+}
+.article_preview-inner {
+  padding: 20px 20px 10px 20px;
+}
+.article_preview-bottom {
+  padding: 10px 20px 20px 20px;
+}
+
+.article_preview-preview {
+  display: block;
+  color: #000;
+  font-size: 14px;
+}
+
+.article-date {
+  display: block;
+  color: #000;
+  margin: 0.5rem 0 1rem 0;
+}

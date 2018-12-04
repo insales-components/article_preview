@@ -1,0 +1,17 @@
+{
+  "name": "article_preview",
+  "version": "1.0.0",
+  "description": "Превью статьи",
+  "author": "LiquidHub.ru",
+  "type": "snippets",
+  "homepage": "https://github.com/insales-components/article_preview",
+  "props": {
+    "common": false,
+    "liquid": true
+  },
+  "dependencies": {
+    "month": "https://github.com/insales-components/month",
+    "ui-buttons": "https://github.com/insales-components/ui-buttons",
+    "ui-images": "https://github.com/insales-components/ui-images"
+  }
+}

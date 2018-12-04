@@ -1,0 +1,32 @@
+{% unless article_prefix %}
+  {% assign article_prefix = '' %}
+{% endunless %}
+
+<div class="article_preview {{ article_prefix }}">
+
+      <div class="card-body">
+        <a class="article_preview-image_wrap image-container is-wide is-cover" href="{{ article.url }}">
+          <img class="article_preview-image" src="{{ article.image.large_url }}">
+        </a>
+        <div class="article_preview-inner">
+          <a class="article_preview-title" href="{{ article.url }}">
+            {{ article.title }}
+          </a>
+
+          <a href="{{ article.url }}" class="article-date">
+            {{ article.created_at | date: "%d" }} {% include "month" , created: article.created_at %} {{ article.created_at | date: "%Y" }}
+          </a>
+
+          <a href="{{ article.url }}" class="article_preview-blog">
+            {{ article.preview | strip_html | truncate: 100 }}
+          </a>
+
+        </div>
+        <div class="article_preview-bottom">
+          <a href="{{ article.url }}" class="article_preview-url bttn-prim">
+            подробнее
+          </a>
+        </div>
+      </div>
+
+</div>
